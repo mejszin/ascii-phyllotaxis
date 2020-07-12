@@ -1,11 +1,11 @@
 ALPHA = 135.5
 SCALE = 1.3
-MAX_POINTS = 100000
-WIDTH = 400
-HEIGHT = 400
+MAX_POINTS = 1000000
+WIDTH = 800
+HEIGHT = 800
 
 def point(n, rounded = true)
-    φ = n * ALPHA
+    φ = n * ALPHA * Math::PI / 180
     r = SCALE * Math.sqrt(n)
     x = r * Math.cos(φ) + (WIDTH  / 2)
     y = r * Math.sin(φ) + (HEIGHT / 2)
